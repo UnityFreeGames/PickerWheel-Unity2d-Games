@@ -21,15 +21,15 @@ Assets/PickerWheel/Prefabs/PickerWheel.prefab
 5. Add EasyUI.PickerWheelUI namespace.
 6. Demo.cs :
 <br /><br />
-using UnityEngine;
-using EasyUI.PickerWheelUI;   //required
+<pre><span class="pl-k">using</span> <span class="pl-en">UnityEngine</span>;
+<span class="pl-k">using</span> <span class="pl-en">EasyUI</span>.<span class="pl-en">PickerWheelUI</span>;   <span class="pl-c"><span class="pl-c">//</span>required</span>
 
-public class Demo : MonoBehaviour {
-	// Reference to the PickerWheel GameObject (step 3):
-	[SerializeField] private PickerWheel pickerWheel;
+<span class="pl-k">public</span> <span class="pl-k">class</span> <span class="pl-en">Demo</span> : <span class="pl-en">MonoBehaviour</span> {
+	<span class="pl-c"><span class="pl-c">//</span> Reference to the PickerWheel GameObject (step 3):</span>
+	[<span class="pl-en">SerializeField</span>] <span class="pl-k">private</span> <span class="pl-en">PickerWheel</span> <span class="pl-en">pickerWheel</span>;
 	
-	private void Start () {
-		// Start spinning:
-		pickerWheel.Spin ();
+	<span class="pl-k">private</span> <span class="pl-k">void</span> <span class="pl-en">Start</span> () {
+		<span class="pl-c"><span class="pl-c">//</span> Start spinning:</span>
+		<span class="pl-smi">pickerWheel</span>.<span class="pl-en">Spin</span> ();
 	}
-}
+}</pre>
