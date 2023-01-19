@@ -33,3 +33,28 @@ Assets/PickerWheel/Prefabs/PickerWheel.prefab
 		<span class="pl-smi">pickerWheel</span>.<span class="pl-en">Spin</span> ();
 	}
 }</pre>
+<br /><br />
+■ Wheel Events : OnSpinStart  and OnSpinEnd  :
+<br /><br />
+<pre><span class="pl-k">using</span> <span class="pl-en">UnityEngine</span>;
+<span class="pl-k">using</span> <span class="pl-en">EasyUI</span>.<span class="pl-en">PickerWheelUI</span>;
+
+<span class="pl-k">public</span> <span class="pl-k">class</span> <span class="pl-en">Demo</span> : <span class="pl-en">MonoBehaviour</span> {
+	[<span class="pl-en">SerializeField</span>] <span class="pl-k">private</span> <span class="pl-en">PickerWheel</span> <span class="pl-en">pickerWheel</span>;
+	
+	<span class="pl-k">private</span> <span class="pl-k">void</span> <span class="pl-en">Start</span> () {
+		<span class="pl-smi">pickerWheel</span>.<span class="pl-en">OnSpinStart</span> (() <span class="pl-k">=&gt;</span>  {
+			<span class="pl-smi">Debug</span>.<span class="pl-en">Log</span> (<span class="pl-s"><span class="pl-pds">"</span>Spin start...<span class="pl-pds">"</span></span>));
+		});
+
+		<span class="pl-smi">pickerWheel</span>.<span class="pl-en">OnSpinEnd</span> (<span class="pl-en">wheelPiece</span> <span class="pl-k">=&gt;</span> {
+			<span class="pl-smi">Debug</span>.<span class="pl-en">Log</span> (<span class="pl-s"><span class="pl-pds">"</span>Spin end :<span class="pl-pds">"</span></span>) ;
+			<span class="pl-smi">Debug</span>.<span class="pl-en">Log</span> (<span class="pl-s"><span class="pl-pds">"</span>Index   : <span class="pl-pds">"</span></span><span class="pl-k">+</span><span class="pl-smi">wheelPiece</span>.<span class="pl-smi">Index</span>);
+			<span class="pl-smi">Debug</span>.<span class="pl-en">Log</span> (<span class="pl-s"><span class="pl-pds">"</span>Chance  : <span class="pl-pds">"</span></span><span class="pl-k">+</span><span class="pl-smi">wheelPiece</span>.<span class="pl-smi">Chance</span>);
+			<span class="pl-smi">Debug</span>.<span class="pl-en">Log</span> (<span class="pl-s"><span class="pl-pds">"</span>Label   : <span class="pl-pds">"</span></span><span class="pl-k">+</span><span class="pl-smi">wheelPiece</span>.<span class="pl-smi">Label</span>);
+			<span class="pl-smi">Debug</span>.<span class="pl-en">Log</span> (<span class="pl-s"><span class="pl-pds">"</span>Amount  : <span class="pl-pds">"</span></span><span class="pl-k">+</span><span class="pl-smi">wheelPiece</span>.<span class="pl-smi">Amount</span>);
+		});
+
+		<span class="pl-smi">pickerWheel</span>.<span class="pl-en">Spin</span> ();
+	}
+}</pre>
