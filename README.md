@@ -6,12 +6,12 @@ A powerful,Customizable, and esay-to-use Spin Wheel UI for Unity
 Video tutorial :https://youtu.be/Apf4JbBbVfc<br />
 Group :https://t.me/Unity_Tutorial_Games<br /><br />
 🎨Game Artist : https://t.me/maria_artgallery<br />
-🎨Game Artist : https://twitter.com/Mariaartist__<br />
-🎨Game Artist : https://instagram.com/mariartist__<br /><br />
+🎨Game Artist : https://instagram.com/mariaartpro<br /><br />
 PLAY : https://play.google.com/store/apps/details/Fun_Arcade_Player_Mini_Games?id=com.coconika.reminder<br />
 Site : https://www.rarecreativities.com/game-design <br /><br />
 
-![banner32](https://user-images.githubusercontent.com/83016119/213407519-a864d715-ea5c-44ab-801f-352ee15f67b2.png)
+![banner32](https://user-images.githubusercontent.com/83016119/220857805-df32f682-8a66-4de8-8fb9-610209d68c96.png)
+
 
 ■ How to use? :
 1. Add DoTween package: http://dotween.demigiant.com/download.php
